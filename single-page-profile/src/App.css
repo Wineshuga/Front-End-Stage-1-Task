@@ -3,6 +3,11 @@
   background-color: #ffffff;
 }
 
+.my-picture {
+  width: 6rem;
+  border-radius: 50%;
+}
+
 .App-header {
   margin-top: 3rem;
   display: flex;
@@ -13,7 +18,12 @@
   color: black;
 }
 
-.App-link {
+#btn__twitter,
+#btn__zuri,
+#books,
+#book__python,
+#pitch,
+#book__design {
   color: black;
   text-decoration: none;
   display: block;
@@ -21,6 +31,10 @@
   margin: 1rem 0.5rem;
   border-radius: 0.5rem;
   background-color: #EAECF0;
+}
+
+.icon {
+  width: 2rem;
 }
 
 .main-links {

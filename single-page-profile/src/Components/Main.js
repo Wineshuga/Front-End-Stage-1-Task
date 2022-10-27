@@ -1,26 +1,22 @@
+import Link from "./Link";
+import github from "../github.svg";
+import slack from "../slack.svg";
+
 const Main = () => {
     return (
         <main className="main-links">
-            <a id="btn__zuri" className="App-link" href="https://training.zuri.team/"
-            target="_blank" rel="noopener noreferrer">
-            Twitter Link</a>
-            <a className="App-link" href="https://training.zuri.team/"
-            target="_blank" rel="noopener noreferrer">
-            Zuri Team</a>
-            <a id="books" className="App-link" href="https://books.zuri.team/"
-            target="_blank" rel="noopener noreferrer">
-            Zuri Books</a>
-            <a id="book__python" className="App-link" href="https://books.zuri.team/python-for-beginners?ref_id=wineshuga"
-            target="_blank" rel="noopener noreferrer">
-            Python Books</a>
-            <a id="pitch" className="App-link" href="https://background.zuri.team"
-            target="_blank" rel="noopener noreferrer">
-            Background Check for Coders</a>
-            <a id="book__design" className="App-link" href="https://books.zuri.team/design-rules"
-            target="_blank" rel="noopener noreferrer">
-            Design Books</a>
+            <Link id="btn__twitter" href="https://www.twitter.com/wineshuga/" text="Twitter Link" />
+            <Link id="btn__zuri" href="https://training.zuri.team/" text="Zuri Team" />
+            <Link id="books" href="https://books.zuri.team/" text="Zuri Books" />
+            <Link id="book__python" href="https://books.zuri.team/python-for-beginners?ref_id=wineshuga" text="Python Books" />
+            <Link id="pitch" href="https://background.zuri.team" text="Background Check for Coders" />
+            <Link id="book__design" href="https://books.zuri.team/design-rules" text="Design Books" />
+            <a href="https://github.com/wineshuga" target="_blank" rel="noopener noreferrer"
+            ><img src={slack} className="icon" alt="slack link" /></a>
+            <a href="https://github.com/wineshuga" target="_blank" rel="noopener noreferrer"
+            ><img src={github} className="icon" alt="github link" /></a>
         </main>
-    )
-}
+    );
+};
 
 export default Main;
