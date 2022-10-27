@@ -2,6 +2,7 @@
   text-align: center;
   background-color: #fff;
 }
+
 #profile__img {
   width: 6rem;
   border-radius: 50%;
@@ -12,8 +13,16 @@
   padding: 0.5rem;
   border-radius: 50%;
   position: absolute;
-  right: 20rem;
+  right: 20vw;
   top: 2rem;
+}
+
+.share-icon-mobile {
+  display: none;
+}
+
+.slack-name {
+  display: none;
 }
 
 .App-header {
@@ -67,4 +76,27 @@
 .main-links {
   max-width: 90vw;
   margin: auto;
+}
+
+@media  screen and (max-width: 425px) and (min-width:200px) {
+  .share-icon-mobile {
+    display: block;
+    border: none;
+    position: absolute;
+    right: 10vw;
+    top: 1.5rem;
+  }
+  
+  .share-icon {
+    display: none;
+  }
+
+  .icon {
+    margin-right: 0.5rem;
+  }
+
+  .icon-div {
+    display: block;
+    text-align: left;
+  }
 }
