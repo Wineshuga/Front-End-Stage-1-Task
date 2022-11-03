@@ -1,4 +1,4 @@
-const Link = (props) => {
+const Btns = (props) => {
 
   return (
     <a 
@@ -12,4 +12,4 @@ const Link = (props) => {
   );
 };
 
-export default Link;
+export default Btns;
