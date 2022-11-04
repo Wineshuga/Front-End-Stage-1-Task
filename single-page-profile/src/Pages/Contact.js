@@ -1,6 +1,6 @@
 import React from "react"
-import FormDetails from "./FormDetails"
-import Footer from "./Footer"
+import FormDetails from "../Components/FormDetails"
+import Footer from "../Components/Footer"
 
 export default function Contact () {
     return (

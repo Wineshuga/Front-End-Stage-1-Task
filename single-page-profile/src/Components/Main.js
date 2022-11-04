@@ -2,6 +2,7 @@ import React from "react";
 import Btns from "./Btns";
 import github from "../github.svg";
 import slack from "../slack.svg";
+import { Link } from "react-router-dom";
 
 const Main = () => {
     return (
@@ -12,7 +13,7 @@ const Main = () => {
             <Btns id="book__python" href="https://books.zuri.team/python-for-beginners?ref_id=wineshuga" text="Python Books" />
             <Btns id="pitch" href="https://backgroundcheck.zuri.team/" text="Background Check for Coders" />
             <Btns id="book__design" href="https://books.zuri.team/design-rules" text="Design Books" />
-            <Btns id="contact" href="./contact" text="Contact Me" />
+            <Link id="contact" to={"/contact"}>Contact Me</Link>
             <img src={slack} className="icon" alt="slack link" />
             <a href="https://github.com/wineshuga" target="_blank" rel="noopener noreferrer"
             ><img src={github} className="icon" alt="github link" /></a>
