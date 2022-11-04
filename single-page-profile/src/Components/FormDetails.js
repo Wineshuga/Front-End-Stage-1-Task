@@ -1,4 +1,4 @@
-import Btns from "./Btns";
+import React from "react";
 
 export default function FormDetails() {
   return (

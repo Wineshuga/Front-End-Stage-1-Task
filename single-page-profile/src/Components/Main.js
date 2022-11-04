@@ -1,3 +1,4 @@
+import React from "react";
 import Btns from "./Btns";
 import github from "../github.svg";
 import slack from "../slack.svg";

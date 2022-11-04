@@ -1,3 +1,4 @@
+import React from "react"
 import FormDetails from "./FormDetails"
 import Footer from "./Footer"
 

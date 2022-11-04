@@ -1,3 +1,4 @@
+import React from "react";
 import pic from "../pic.jpg";
 import Icon from "../Icon.png";
 import share from "../share-button.png"

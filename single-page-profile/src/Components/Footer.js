@@ -1,3 +1,4 @@
+import React from "react";
 import Vector from "../Vector.png";
 import I4G from "../I4G.png";
 
