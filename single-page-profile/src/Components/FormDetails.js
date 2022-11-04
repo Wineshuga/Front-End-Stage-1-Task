@@ -2,8 +2,12 @@ import React from "react";
 
 export default function FormDetails() {
   return (
-    <form>
-      <label>First name:</label>
+    <form className="form">
+      <div className="name-labels">
+      <label className="first-label">First name:</label>
+      <label className="second-label">Last name:</label>
+      </div>
+      <div className="name-inputs">
       <input
         id="first_name"
         type="text"
@@ -11,7 +15,6 @@ export default function FormDetails() {
         placeholder="Enter your first name"
         required
       />
-      <label>Last name:</label>
       <input
         id="last_name"
         type="text"
@@ -19,6 +22,7 @@ export default function FormDetails() {
         placeholder="Enter your last name"
         required
       />
+      </div>
       <label>Email:</label>
       <input
         id="email"
@@ -31,10 +35,11 @@ export default function FormDetails() {
       <textarea
         id="message"
         type="text"
-        placeholder="Send me a message and I'll respond as soon as possibly"
+        rows={6}
+        placeholder="Send me a message and I'll respond as soon as possible..."
       ></textarea>
-      <label>
-        <input type="checkbox" />
+      <label id="check-box-label">
+        <input id="check-box" type="checkbox" />
         You agree to providing your data to Wineshuga who may contact you.
       </label>
       <button id="btn__submit">Send message</button>

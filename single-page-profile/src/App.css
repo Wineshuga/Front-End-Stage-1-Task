@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   text-align: center;
   background-color: #fff;
@@ -79,7 +85,72 @@
   margin: auto;
 }
 
-@media  screen and (max-width: 425px) and (min-width:200px) {
+label,
+input {
+  display: block;
+  text-align: left;
+}
+
+label {
+  font-weight: 500;
+}
+
+.contact-page-container {
+  max-width: 50vw;
+  margin: auto;
+  text-align: left;
+  line-height: 2;
+}
+
+.form {
+  margin-top: 1rem;
+}
+
+.first-label,
+#first_name,
+.second-label,
+#last_name {
+  width: 49%;
+}
+
+.name-inputs,
+.name-labels {
+  display: flex;
+  gap: 3rem;
+}
+
+#email,
+#first_name,
+#last_name,
+#message {
+  padding: 5px;
+}
+
+#email,
+#message {
+  width: 100%;
+}
+
+#check-box-label {
+  font-weight: normal !important;
+}
+
+#check-box {
+  display: inline-flex;
+  margin-right: 1rem;
+}
+
+#btn__submit {
+  width: 100%;
+  background-color: #1570EF;
+  color: #fff;
+  border: none;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  border-radius: 0.3rem;
+}
+
+@media screen and (max-width: 425px) and (min-width:200px) {
   .share-icon-mobile {
     display: block;
     border: none;
@@ -87,7 +158,7 @@
     right: 10vw;
     top: 1.5rem;
   }
-  
+
   .share-icon {
     display: none;
   }
