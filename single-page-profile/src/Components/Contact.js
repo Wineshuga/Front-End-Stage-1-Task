@@ -1,7 +1,7 @@
 import FormDetails from "./FormDetails"
 import Footer from "./Footer"
 
-function Contact () {
+export default function Contact () {
     return (
         <>
             <h1>Contact Me</h1>
