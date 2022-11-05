@@ -23,6 +23,24 @@ export default function FormDetails() {
         required
       />
       </div>
+      <label className="first-label-mobile">First name:</label>
+      <input
+        id="first_name"
+        type="text"
+        name="First Name"
+        placeholder="Enter your first name"
+        className="input-on-large-screen"
+        required
+      />
+      <label className="second-label-mobile">Last name:</label>
+      <input
+        id="last_name"
+        type="text"
+        name="Last Name"
+        placeholder="Enter your last name"
+        className="input-on-large-screen"
+        required
+      />
       <label>Email:</label>
       <input
         id="email"

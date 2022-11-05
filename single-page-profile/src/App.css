@@ -73,7 +73,7 @@
 
 .footer {
   width: 90vw;
-  margin: 10rem auto 0 auto;
+  margin: 7rem auto 2rem auto;
 }
 
 .left-icon {
@@ -145,9 +145,12 @@ label {
 
 #first_name:focus,
 #last_name:focus,
-#email:focus,
-#message:focus {
+#email:focus {
   border: 1px solid#1570EF;
+}
+
+#message:focus {
+  border: 3px solid #D1E9FF;
 }
 
 #check-box:hover {
@@ -171,6 +174,33 @@ label {
   cursor: pointer;
 }
 
+.first-label-mobile,
+.second-label-mobile,
+.input-on-large-screen {
+  display: none;
+}
+
+@media screen and (max-width: 680px) and (min-width:200px) {
+
+  .first-label-mobile,
+  .second-label-mobile,
+  #first_name,
+  #last_name {
+    display: block;
+    width: 100%;
+  }
+
+  .name-labels,
+  .name-inputs {
+    display: none;
+  }
+
+  .contact-page-container {
+    line-height: 1.5;
+    max-width: 70vw;
+  }
+}
+
 @media screen and (max-width: 425px) and (min-width:200px) {
   .share-icon-mobile {
     display: block;
@@ -191,5 +221,6 @@ label {
   .icon-div {
     display: block;
     text-align: left;
+    margin: 0.5rem 0;
   }
 }
