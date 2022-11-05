@@ -7,7 +7,7 @@ const Header = () => {
     return (
         <header className="App-header">
             <img src={pic} id="profile__img" alt="logo" />
-            <h5>WineShuga</h5>
+            <h5>Wineshuga</h5>
             <p id="slack">Slack: Wineshuga</p>
             <img className="share-icon" src={Icon} alt="icon" />
             <img className="share-icon-mobile" src={share} alt="icon" />
